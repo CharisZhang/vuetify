@@ -1,6 +1,6 @@
 const fs = require('fs')
 
-// general asyc function
+// general async function
 const asyncForEach = async (array, callback) => {
   for (let index = 0; index < array.length; index++) {
     await callback(array[index], index, array)
@@ -18,5 +18,5 @@ const getMapData = async () => {
 }
 
 module.exports = {
-  ...getMapData()
+  getMapData
 }
